@@ -34,5 +34,8 @@ return [
             'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
     ],
+    'wasenders' => [
+        'base_url' => env('API_WA_SENDER_URL'),
+],
 
 ];
