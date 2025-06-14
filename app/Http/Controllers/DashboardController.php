@@ -27,6 +27,7 @@ class DashboardController extends Controller
             $error       = 'Gagal terkoneksi ke Wasenders API (HTTP '.$resp->status().')';
         }
         return view('dashboard.index',[
+            'title' => 'Dashboard',
             'data'  => $sessionData,
             'error' => $error,
         ]);
